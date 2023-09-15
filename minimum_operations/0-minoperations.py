@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+    #!/usr/bin/python3
 
 """
 Given a number n, write a method that calculates the fewest # of operations.
@@ -16,7 +16,7 @@ def minOperations(n):
     i = 2
     while i * i <= n:
         if n % i == 0:
-            return i + minOperations(n //i)
+            return i + minOperations(n // i)
         i += 1
 
     return n
